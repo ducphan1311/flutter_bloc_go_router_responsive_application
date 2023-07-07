@@ -3,7 +3,8 @@ import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_
 import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-typedef InitializeApp = Future<AuthNavigationState> Function(BuildContext context);
+typedef InitializeApp = Future<AuthNavigationState> Function(
+    BuildContext context);
 
 class SplashPage extends StatefulWidget {
   static const path = '/splash_page';
@@ -19,7 +20,7 @@ class _SplashPageState extends State<SplashPage> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     widget.initializeApp(context).then((state) {
-      if(mounted) {
+      if (mounted) {
         context.read<AuthNavigationBloc>().setState(state);
       }
     });

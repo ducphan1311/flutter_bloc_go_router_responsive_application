@@ -13,10 +13,7 @@ Future initializeDependencies() async {
 
   GetIt.instance.registerSingleton(AuthNavigationBloc());
   GetIt.instance.registerSingleton(LocalService());
-  GetIt.instance.registerSingleton(AuthService(AuthMockDataSource(), AuthLocalDataSource(), AuthApiDataSource()));
+  GetIt.instance.registerSingleton(AuthService(
+      AuthMockDataSource(), AuthLocalDataSource(), AuthApiDataSource()));
   GetIt.instance.registerSingleton(AuthBloc());
-
-
-
-
 }

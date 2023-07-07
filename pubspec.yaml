@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -26,24 +26,26 @@ dependencies:
 
   # StateManagement
   flutter_bloc:
-  freezed_annotation: ^0.14.3
+  freezed_annotation:
   # JsonParser
-  json_annotation: ^4.4.0
+  json_annotation:
 
   # Simple direct Service Locator
   get_it:
   # Local Persist
   shared_preferences:
-
-
+  # Navigation
+  go_router: ^8.2.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  collection:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner:
+  build_runner: ^2.4.5
+  go_router_builder:
   flutter_gen_runner:
   json_serializable:
   freezed:

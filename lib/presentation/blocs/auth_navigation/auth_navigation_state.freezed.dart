@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_navigation_state.dart';
 
@@ -11,31 +12,7 @@ part of 'auth_navigation_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AuthNavigationStateTearOff {
-  const _$AuthNavigationStateTearOff();
-
-  AuthNavigationStateAuthorized authorized() {
-    return const AuthNavigationStateAuthorized();
-  }
-
-  AuthNavigationStateUnAuthorized unAuthorized() {
-    return const AuthNavigationStateUnAuthorized();
-  }
-
-  AuthNavigationStateGuestMode guestMode() {
-    return const AuthNavigationStateGuestMode();
-  }
-
-  AuthNavigationStateLoadConfig loadConfig() {
-    return const AuthNavigationStateLoadConfig();
-  }
-}
-
-/// @nodoc
-const $AuthNavigationState = _$AuthNavigationStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AuthNavigationState {
@@ -49,10 +26,10 @@ mixin _$AuthNavigationState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? authorized,
-    TResult Function()? unAuthorized,
-    TResult Function()? guestMode,
-    TResult Function()? loadConfig,
+    TResult? Function()? authorized,
+    TResult? Function()? unAuthorized,
+    TResult? Function()? guestMode,
+    TResult? Function()? loadConfig,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,10 +52,10 @@ mixin _$AuthNavigationState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthNavigationStateAuthorized value)? authorized,
-    TResult Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
-    TResult Function(AuthNavigationStateGuestMode value)? guestMode,
-    TResult Function(AuthNavigationStateLoadConfig value)? loadConfig,
+    TResult? Function(AuthNavigationStateAuthorized value)? authorized,
+    TResult? Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
+    TResult? Function(AuthNavigationStateGuestMode value)? guestMode,
+    TResult? Function(AuthNavigationStateLoadConfig value)? loadConfig,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -96,39 +73,37 @@ mixin _$AuthNavigationState {
 abstract class $AuthNavigationStateCopyWith<$Res> {
   factory $AuthNavigationStateCopyWith(
           AuthNavigationState value, $Res Function(AuthNavigationState) then) =
-      _$AuthNavigationStateCopyWithImpl<$Res>;
+      _$AuthNavigationStateCopyWithImpl<$Res, AuthNavigationState>;
 }
 
 /// @nodoc
-class _$AuthNavigationStateCopyWithImpl<$Res>
+class _$AuthNavigationStateCopyWithImpl<$Res, $Val extends AuthNavigationState>
     implements $AuthNavigationStateCopyWith<$Res> {
   _$AuthNavigationStateCopyWithImpl(this._value, this._then);
 
-  final AuthNavigationState _value;
   // ignore: unused_field
-  final $Res Function(AuthNavigationState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $AuthNavigationStateAuthorizedCopyWith<$Res> {
-  factory $AuthNavigationStateAuthorizedCopyWith(
-          AuthNavigationStateAuthorized value,
-          $Res Function(AuthNavigationStateAuthorized) then) =
-      _$AuthNavigationStateAuthorizedCopyWithImpl<$Res>;
+abstract class _$$AuthNavigationStateAuthorizedCopyWith<$Res> {
+  factory _$$AuthNavigationStateAuthorizedCopyWith(
+          _$AuthNavigationStateAuthorized value,
+          $Res Function(_$AuthNavigationStateAuthorized) then) =
+      __$$AuthNavigationStateAuthorizedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthNavigationStateAuthorizedCopyWithImpl<$Res>
-    extends _$AuthNavigationStateCopyWithImpl<$Res>
-    implements $AuthNavigationStateAuthorizedCopyWith<$Res> {
-  _$AuthNavigationStateAuthorizedCopyWithImpl(
-      AuthNavigationStateAuthorized _value,
-      $Res Function(AuthNavigationStateAuthorized) _then)
-      : super(_value, (v) => _then(v as AuthNavigationStateAuthorized));
-
-  @override
-  AuthNavigationStateAuthorized get _value =>
-      super._value as AuthNavigationStateAuthorized;
+class __$$AuthNavigationStateAuthorizedCopyWithImpl<$Res>
+    extends _$AuthNavigationStateCopyWithImpl<$Res,
+        _$AuthNavigationStateAuthorized>
+    implements _$$AuthNavigationStateAuthorizedCopyWith<$Res> {
+  __$$AuthNavigationStateAuthorizedCopyWithImpl(
+      _$AuthNavigationStateAuthorized _value,
+      $Res Function(_$AuthNavigationStateAuthorized) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -143,7 +118,9 @@ class _$AuthNavigationStateAuthorized implements AuthNavigationStateAuthorized {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is AuthNavigationStateAuthorized);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AuthNavigationStateAuthorized);
   }
 
   @override
@@ -163,10 +140,10 @@ class _$AuthNavigationStateAuthorized implements AuthNavigationStateAuthorized {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? authorized,
-    TResult Function()? unAuthorized,
-    TResult Function()? guestMode,
-    TResult Function()? loadConfig,
+    TResult? Function()? authorized,
+    TResult? Function()? unAuthorized,
+    TResult? Function()? guestMode,
+    TResult? Function()? loadConfig,
   }) {
     return authorized?.call();
   }
@@ -201,10 +178,10 @@ class _$AuthNavigationStateAuthorized implements AuthNavigationStateAuthorized {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthNavigationStateAuthorized value)? authorized,
-    TResult Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
-    TResult Function(AuthNavigationStateGuestMode value)? guestMode,
-    TResult Function(AuthNavigationStateLoadConfig value)? loadConfig,
+    TResult? Function(AuthNavigationStateAuthorized value)? authorized,
+    TResult? Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
+    TResult? Function(AuthNavigationStateGuestMode value)? guestMode,
+    TResult? Function(AuthNavigationStateLoadConfig value)? loadConfig,
   }) {
     return authorized?.call(this);
   }
@@ -231,25 +208,22 @@ abstract class AuthNavigationStateAuthorized implements AuthNavigationState {
 }
 
 /// @nodoc
-abstract class $AuthNavigationStateUnAuthorizedCopyWith<$Res> {
-  factory $AuthNavigationStateUnAuthorizedCopyWith(
-          AuthNavigationStateUnAuthorized value,
-          $Res Function(AuthNavigationStateUnAuthorized) then) =
-      _$AuthNavigationStateUnAuthorizedCopyWithImpl<$Res>;
+abstract class _$$AuthNavigationStateUnAuthorizedCopyWith<$Res> {
+  factory _$$AuthNavigationStateUnAuthorizedCopyWith(
+          _$AuthNavigationStateUnAuthorized value,
+          $Res Function(_$AuthNavigationStateUnAuthorized) then) =
+      __$$AuthNavigationStateUnAuthorizedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthNavigationStateUnAuthorizedCopyWithImpl<$Res>
-    extends _$AuthNavigationStateCopyWithImpl<$Res>
-    implements $AuthNavigationStateUnAuthorizedCopyWith<$Res> {
-  _$AuthNavigationStateUnAuthorizedCopyWithImpl(
-      AuthNavigationStateUnAuthorized _value,
-      $Res Function(AuthNavigationStateUnAuthorized) _then)
-      : super(_value, (v) => _then(v as AuthNavigationStateUnAuthorized));
-
-  @override
-  AuthNavigationStateUnAuthorized get _value =>
-      super._value as AuthNavigationStateUnAuthorized;
+class __$$AuthNavigationStateUnAuthorizedCopyWithImpl<$Res>
+    extends _$AuthNavigationStateCopyWithImpl<$Res,
+        _$AuthNavigationStateUnAuthorized>
+    implements _$$AuthNavigationStateUnAuthorizedCopyWith<$Res> {
+  __$$AuthNavigationStateUnAuthorizedCopyWithImpl(
+      _$AuthNavigationStateUnAuthorized _value,
+      $Res Function(_$AuthNavigationStateUnAuthorized) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -265,7 +239,9 @@ class _$AuthNavigationStateUnAuthorized
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is AuthNavigationStateUnAuthorized);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AuthNavigationStateUnAuthorized);
   }
 
   @override
@@ -285,10 +261,10 @@ class _$AuthNavigationStateUnAuthorized
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? authorized,
-    TResult Function()? unAuthorized,
-    TResult Function()? guestMode,
-    TResult Function()? loadConfig,
+    TResult? Function()? authorized,
+    TResult? Function()? unAuthorized,
+    TResult? Function()? guestMode,
+    TResult? Function()? loadConfig,
   }) {
     return unAuthorized?.call();
   }
@@ -323,10 +299,10 @@ class _$AuthNavigationStateUnAuthorized
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthNavigationStateAuthorized value)? authorized,
-    TResult Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
-    TResult Function(AuthNavigationStateGuestMode value)? guestMode,
-    TResult Function(AuthNavigationStateLoadConfig value)? loadConfig,
+    TResult? Function(AuthNavigationStateAuthorized value)? authorized,
+    TResult? Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
+    TResult? Function(AuthNavigationStateGuestMode value)? guestMode,
+    TResult? Function(AuthNavigationStateLoadConfig value)? loadConfig,
   }) {
     return unAuthorized?.call(this);
   }
@@ -353,25 +329,22 @@ abstract class AuthNavigationStateUnAuthorized implements AuthNavigationState {
 }
 
 /// @nodoc
-abstract class $AuthNavigationStateGuestModeCopyWith<$Res> {
-  factory $AuthNavigationStateGuestModeCopyWith(
-          AuthNavigationStateGuestMode value,
-          $Res Function(AuthNavigationStateGuestMode) then) =
-      _$AuthNavigationStateGuestModeCopyWithImpl<$Res>;
+abstract class _$$AuthNavigationStateGuestModeCopyWith<$Res> {
+  factory _$$AuthNavigationStateGuestModeCopyWith(
+          _$AuthNavigationStateGuestMode value,
+          $Res Function(_$AuthNavigationStateGuestMode) then) =
+      __$$AuthNavigationStateGuestModeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthNavigationStateGuestModeCopyWithImpl<$Res>
-    extends _$AuthNavigationStateCopyWithImpl<$Res>
-    implements $AuthNavigationStateGuestModeCopyWith<$Res> {
-  _$AuthNavigationStateGuestModeCopyWithImpl(
-      AuthNavigationStateGuestMode _value,
-      $Res Function(AuthNavigationStateGuestMode) _then)
-      : super(_value, (v) => _then(v as AuthNavigationStateGuestMode));
-
-  @override
-  AuthNavigationStateGuestMode get _value =>
-      super._value as AuthNavigationStateGuestMode;
+class __$$AuthNavigationStateGuestModeCopyWithImpl<$Res>
+    extends _$AuthNavigationStateCopyWithImpl<$Res,
+        _$AuthNavigationStateGuestMode>
+    implements _$$AuthNavigationStateGuestModeCopyWith<$Res> {
+  __$$AuthNavigationStateGuestModeCopyWithImpl(
+      _$AuthNavigationStateGuestMode _value,
+      $Res Function(_$AuthNavigationStateGuestMode) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -386,7 +359,9 @@ class _$AuthNavigationStateGuestMode implements AuthNavigationStateGuestMode {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is AuthNavigationStateGuestMode);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AuthNavigationStateGuestMode);
   }
 
   @override
@@ -406,10 +381,10 @@ class _$AuthNavigationStateGuestMode implements AuthNavigationStateGuestMode {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? authorized,
-    TResult Function()? unAuthorized,
-    TResult Function()? guestMode,
-    TResult Function()? loadConfig,
+    TResult? Function()? authorized,
+    TResult? Function()? unAuthorized,
+    TResult? Function()? guestMode,
+    TResult? Function()? loadConfig,
   }) {
     return guestMode?.call();
   }
@@ -444,10 +419,10 @@ class _$AuthNavigationStateGuestMode implements AuthNavigationStateGuestMode {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthNavigationStateAuthorized value)? authorized,
-    TResult Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
-    TResult Function(AuthNavigationStateGuestMode value)? guestMode,
-    TResult Function(AuthNavigationStateLoadConfig value)? loadConfig,
+    TResult? Function(AuthNavigationStateAuthorized value)? authorized,
+    TResult? Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
+    TResult? Function(AuthNavigationStateGuestMode value)? guestMode,
+    TResult? Function(AuthNavigationStateLoadConfig value)? loadConfig,
   }) {
     return guestMode?.call(this);
   }
@@ -473,25 +448,22 @@ abstract class AuthNavigationStateGuestMode implements AuthNavigationState {
 }
 
 /// @nodoc
-abstract class $AuthNavigationStateLoadConfigCopyWith<$Res> {
-  factory $AuthNavigationStateLoadConfigCopyWith(
-          AuthNavigationStateLoadConfig value,
-          $Res Function(AuthNavigationStateLoadConfig) then) =
-      _$AuthNavigationStateLoadConfigCopyWithImpl<$Res>;
+abstract class _$$AuthNavigationStateLoadConfigCopyWith<$Res> {
+  factory _$$AuthNavigationStateLoadConfigCopyWith(
+          _$AuthNavigationStateLoadConfig value,
+          $Res Function(_$AuthNavigationStateLoadConfig) then) =
+      __$$AuthNavigationStateLoadConfigCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthNavigationStateLoadConfigCopyWithImpl<$Res>
-    extends _$AuthNavigationStateCopyWithImpl<$Res>
-    implements $AuthNavigationStateLoadConfigCopyWith<$Res> {
-  _$AuthNavigationStateLoadConfigCopyWithImpl(
-      AuthNavigationStateLoadConfig _value,
-      $Res Function(AuthNavigationStateLoadConfig) _then)
-      : super(_value, (v) => _then(v as AuthNavigationStateLoadConfig));
-
-  @override
-  AuthNavigationStateLoadConfig get _value =>
-      super._value as AuthNavigationStateLoadConfig;
+class __$$AuthNavigationStateLoadConfigCopyWithImpl<$Res>
+    extends _$AuthNavigationStateCopyWithImpl<$Res,
+        _$AuthNavigationStateLoadConfig>
+    implements _$$AuthNavigationStateLoadConfigCopyWith<$Res> {
+  __$$AuthNavigationStateLoadConfigCopyWithImpl(
+      _$AuthNavigationStateLoadConfig _value,
+      $Res Function(_$AuthNavigationStateLoadConfig) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -506,7 +478,9 @@ class _$AuthNavigationStateLoadConfig implements AuthNavigationStateLoadConfig {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is AuthNavigationStateLoadConfig);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AuthNavigationStateLoadConfig);
   }
 
   @override
@@ -526,10 +500,10 @@ class _$AuthNavigationStateLoadConfig implements AuthNavigationStateLoadConfig {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? authorized,
-    TResult Function()? unAuthorized,
-    TResult Function()? guestMode,
-    TResult Function()? loadConfig,
+    TResult? Function()? authorized,
+    TResult? Function()? unAuthorized,
+    TResult? Function()? guestMode,
+    TResult? Function()? loadConfig,
   }) {
     return loadConfig?.call();
   }
@@ -564,10 +538,10 @@ class _$AuthNavigationStateLoadConfig implements AuthNavigationStateLoadConfig {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthNavigationStateAuthorized value)? authorized,
-    TResult Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
-    TResult Function(AuthNavigationStateGuestMode value)? guestMode,
-    TResult Function(AuthNavigationStateLoadConfig value)? loadConfig,
+    TResult? Function(AuthNavigationStateAuthorized value)? authorized,
+    TResult? Function(AuthNavigationStateUnAuthorized value)? unAuthorized,
+    TResult? Function(AuthNavigationStateGuestMode value)? guestMode,
+    TResult? Function(AuthNavigationStateLoadConfig value)? loadConfig,
   }) {
     return loadConfig?.call(this);
   }

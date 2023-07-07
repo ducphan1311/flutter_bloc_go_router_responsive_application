@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tips_and_tricks_flutter/presentation/blocs/auth/auth_bloc.dart';
+import 'package:tips_and_tricks_flutter/presentation/pages/app_start_page.dart';
+import 'package:tips_and_tricks_flutter/presentation/pages/route/app_router.dart';
 
 class LoginPage extends StatefulWidget {
   static const path = 'LoginPage';
@@ -21,9 +23,16 @@ class _LoginPageState extends State<LoginPage> {
         width: double.infinity,
         height: double.infinity,
         child: Center(
-          child: ElevatedButton(onPressed: () async {
-             await context.read<AuthBloc>().login('userName', 'passWord');
-          }, child: Text('LogIn')),
+          child: ElevatedButton(
+              onPressed: () async {
+                await context
+                    .read<AuthBloc>()
+                    .login('userName', 'passWord')
+                    .then((value) => {
+                          if (router.location != '/') {router.go('/')}
+                        });
+              },
+              child: Text('LogIn')),
         ),
       ),
     );

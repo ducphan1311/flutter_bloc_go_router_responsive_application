@@ -1,15 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_it/get_it.dart';
-import 'package:tips_and_tricks_flutter/application/services/local_service.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_state.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/home/home_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/home_page.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/login_page.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/navigator/auth_navigator.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/navigator/main_navigator.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/splash_page.dart';
+
+import '../presentation/pages/route/app_router.dart';
 
 class Application extends StatefulWidget {
   static const path = 'Application';
@@ -27,25 +18,18 @@ class _ApplicationState extends State<Application> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: BlocBuilder<AuthNavigationBloc, AuthNavigationState>(
-        bloc: context.read<AuthNavigationBloc>(),
-        builder: (context, state) {
-        return state.when(
-            authorized: () => MainNavigator(),
-            unAuthorized: () => AuthNavigator(),
-            guestMode: () => MainNavigator(),
-            loadConfig: () => SplashPage(initializeApp: (context) async {
-              if (GetIt.instance.get<LocalService>().isAuthorized()) {
-                    return AuthNavigationState.authorized();
-                  } else {
-                    return AuthNavigationState.guestMode();
-                  }
-                }));
+    return MaterialApp.router(
+      // theme: appThemes[state],
+      builder: (context, child) {
+        return MediaQuery(
+          data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+          child: child!,
+        );
       },
-        buildWhen: (stateOld, stateCurrent) {
-          return stateOld.runtimeType != stateCurrent.runtimeType;
-        },),
+      debugShowCheckedModeBanner: false,
+      routerDelegate: router.routerDelegate,
+      routeInformationParser: router.routeInformationParser,
+      routeInformationProvider: router.routeInformationProvider,
     );
   }
 }
