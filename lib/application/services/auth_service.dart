@@ -1,10 +1,11 @@
 import 'package:get_it/get_it.dart';
-import 'package:tips_and_tricks_flutter/application/services/local_service.dart';
-import 'package:tips_and_tricks_flutter/data/repositories/auth/auth_api_repository.dart';
-import 'package:tips_and_tricks_flutter/data/repositories/auth/auth_local_reposirory.dart';
-import 'package:tips_and_tricks_flutter/data/repositories/auth/auth_mock_repository.dart';
-import 'package:tips_and_tricks_flutter/domain/models/authentication_model.dart';
-import 'package:tips_and_tricks_flutter/domain/models/profile_model.dart';
+
+import '../../data/repositories/auth/auth_api_repository.dart';
+import '../../data/repositories/auth/auth_local_reposirory.dart';
+import '../../data/repositories/auth/auth_mock_repository.dart';
+import '../../domain/models/authentication_model.dart';
+import '../../domain/models/profile_model.dart';
+import 'local_service.dart';
 
 class AuthService {
   AuthService(

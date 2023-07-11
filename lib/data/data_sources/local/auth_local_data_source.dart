@@ -1,6 +1,6 @@
-import 'package:tips_and_tricks_flutter/data/repositories/auth/auth_local_reposirory.dart';
-import 'package:tips_and_tricks_flutter/domain/models/authentication_model.dart';
-import 'package:tips_and_tricks_flutter/domain/models/profile_model.dart';
+import '../../../domain/models/authentication_model.dart';
+import '../../../domain/models/profile_model.dart';
+import '../../repositories/auth/auth_local_reposirory.dart';
 
 class AuthLocalDataSource extends AuthLocalRepository {
   @override

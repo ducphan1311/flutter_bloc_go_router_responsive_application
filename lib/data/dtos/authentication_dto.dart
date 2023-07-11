@@ -1,5 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:tips_and_tricks_flutter/domain/models/authentication_model.dart';
+
+import '../../domain/models/authentication_model.dart';
 part 'authentication_dto.g.dart';
 
 @JsonSerializable()

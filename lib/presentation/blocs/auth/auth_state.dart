@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:tips_and_tricks_flutter/domain/models/profile_model.dart';
+
+import '../../../domain/models/profile_model.dart';
 part 'auth_state.freezed.dart';
 
 @freezed

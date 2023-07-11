@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/design_config.dart';
 
+import 'design_config.dart';
 import 'inherited_responsive.dart';
 
 class ResponsiveBuilder extends StatelessWidget {

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/presentation/blocs/auth/auth_bloc.dart';
+import 'package:flutter_application/presentation/blocs/auth_navigation/auth_navigation_bloc.dart';
+import 'package:flutter_application/utils/responsive/breakpoint.dart';
+import 'package:flutter_application/utils/responsive/device_type.dart';
+import 'package:flutter_application/utils/responsive/responsive_guide_wrapper.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:tips_and_tricks_flutter/application/application.dart';
-import 'package:tips_and_tricks_flutter/application/services/local_service.dart';
-import 'package:tips_and_tricks_flutter/initialize_dependencies.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth/auth_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_bloc.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/breakpoint.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/design_config.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/device_type.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/responsive_guide_wrapper.dart';
+
+import 'application/application.dart';
+import 'application/services/local_service.dart';
+import 'initialize_dependencies.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

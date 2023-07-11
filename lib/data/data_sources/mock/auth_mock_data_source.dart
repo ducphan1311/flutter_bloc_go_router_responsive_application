@@ -1,8 +1,9 @@
-import 'package:tips_and_tricks_flutter/data/dtos/authentication_dto.dart';
-import 'package:tips_and_tricks_flutter/data/dtos/profile_dto.dart';
-import 'package:tips_and_tricks_flutter/data/repositories/auth/auth_mock_repository.dart';
-import 'package:tips_and_tricks_flutter/domain/models/authentication_model.dart';
-import 'package:tips_and_tricks_flutter/domain/models/profile_model.dart';
+
+import '../../../domain/models/authentication_model.dart';
+import '../../../domain/models/profile_model.dart';
+import '../../dtos/authentication_dto.dart';
+import '../../dtos/profile_dto.dart';
+import '../../repositories/auth/auth_mock_repository.dart';
 
 class AuthMockDataSource extends AuthMockRepository {
   @override

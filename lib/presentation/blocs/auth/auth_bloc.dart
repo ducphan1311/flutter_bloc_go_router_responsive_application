@@ -1,16 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tips_and_tricks_flutter/application/services/auth_service.dart';
-import 'package:tips_and_tricks_flutter/application/services/local_service.dart';
-import 'package:tips_and_tricks_flutter/data/data_sources/local/auth_local_data_source.dart';
-import 'package:tips_and_tricks_flutter/data/data_sources/mock/auth_mock_data_source.dart';
-import 'package:tips_and_tricks_flutter/data/data_sources/remote/auth_api_data_source.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth/auth_state.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_state.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/home/home_bloc.dart';
-import 'package:tips_and_tricks_flutter/utils/cache.dart';
+
+import '../../../application/services/auth_service.dart';
+import '../../../application/services/local_service.dart';
+import '../../../utils/cache.dart';
+import '../auth_navigation/auth_navigation_bloc.dart';
+import '../auth_navigation/auth_navigation_state.dart';
+import 'auth_state.dart';
 
 class AuthBloc extends Cubit<AuthState> {
   AuthBloc() : super(AuthState.unAuthorized());

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth/auth_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_state.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/home/home_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/home/home_state.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/screen_type_layout.dart';
+
+import '../../utils/responsive/screen_type_layout.dart';
+import '../blocs/auth/auth_bloc.dart';
+import '../blocs/auth_navigation/auth_navigation_bloc.dart';
+import '../blocs/auth_navigation/auth_navigation_state.dart';
+import '../blocs/home/home_bloc.dart';
+import '../blocs/home/home_state.dart';
 
 class HomePage extends StatefulWidget {
   static const path = 'HomePage';

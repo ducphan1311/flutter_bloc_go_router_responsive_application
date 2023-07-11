@@ -1,10 +1,10 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/device_type.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/inherited_responsive.dart';
 
 import 'breakpoint.dart';
 import 'design_config.dart';
+import 'device_type.dart';
+import 'inherited_responsive.dart';
 
 class ResponsiveGuideWrapper extends StatefulWidget {
   static const path = '/responsive_guide_wrapper';

@@ -1,4 +1,4 @@
-import 'package:tips_and_tricks_flutter/utils/responsive/device_type.dart';
+import 'device_type.dart';
 
 class Breakpoint {
   final double minWidth;

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/device_type.dart';
-import 'package:tips_and_tricks_flutter/utils/responsive/responsive_builder.dart';
+import 'dart:developer' as developer;
+
+import 'package:flutter_application/utils/responsive/responsive_builder.dart';
+
+import 'device_type.dart';
 
 typedef WidgetBuilder = Widget Function(BuildContext);
 
@@ -33,7 +36,7 @@ class ScreenTypeLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, designInfo) {
-      print('designInfo: ${designInfo.toString()}');
+      developer.log('designInfo: ${designInfo.toString()}');
       switch (designInfo.deviceType) {
         case DeviceType.mobile:
           return mobile!(context);

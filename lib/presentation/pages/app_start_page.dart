@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/home_page.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/login_page.dart';
 
 import '../../application/services/local_service.dart';
 import '../blocs/auth_navigation/auth_navigation_bloc.dart';
 import '../blocs/auth_navigation/auth_navigation_state.dart';
 import '../blocs/home/home_bloc.dart';
+import 'home_page.dart';
+import 'login_page.dart';
 import 'splash_page.dart';
 
 class AppStartPage extends StatefulWidget {

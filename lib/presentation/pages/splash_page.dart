@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../blocs/auth_navigation/auth_navigation_bloc.dart';
+import '../blocs/auth_navigation/auth_navigation_state.dart';
 
 typedef InitializeApp = Future<AuthNavigationState> Function(
     BuildContext context);

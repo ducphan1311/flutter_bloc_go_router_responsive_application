@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/presentation/pages/route/app_router.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/blocs/auth/auth_bloc.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/app_start_page.dart';
-import 'package:tips_and_tricks_flutter/presentation/pages/route/app_router.dart';
+
+import '../blocs/auth/auth_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   static const path = 'LoginPage';
