@@ -36,4 +36,9 @@ class Breakpoint {
             maxWidth == other.maxWidth &&
             deviceType == other.deviceType;
   }
+
+  @override
+  String toString() {
+    return '{minWidth: $minWidth, maxWidth: $maxWidth, deviceType: $deviceType, data: $data}';
+  }
 }

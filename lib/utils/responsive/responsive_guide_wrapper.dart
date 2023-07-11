@@ -9,12 +9,12 @@ import 'design_config.dart';
 class ResponsiveGuideWrapper extends StatefulWidget {
   static const path = '/responsive_guide_wrapper';
   final Widget child;
-  final DesignConfig config;
+  final List<Breakpoint> breakpoints;
   final bool useShortestSide;
   const ResponsiveGuideWrapper(
       {Key? key,
       required this.child,
-      required this.config,
+      required this.breakpoints,
       this.useShortestSide = false})
       : super(key: key);
 
@@ -62,7 +62,7 @@ class _ResponsiveGuideWrapperState extends State<ResponsiveGuideWrapper>
     windowHeight = getWindowHeight();
     screenWidth = getScreenWidth();
     screenHeight = getScreenHeight();
-    breakpoint = widget.config.breakpoints.firstWhereOrNull((element) =>
+    breakpoint = widget.breakpoints.firstWhereOrNull((element) =>
             screenWidth >= element.minWidth &&
             screenWidth <= element.maxWidth) ??
         const Breakpoint(
@@ -111,7 +111,7 @@ class _ResponsiveGuideWrapperState extends State<ResponsiveGuideWrapper>
             screenWidth: screenWidth,
             screenHeight: screenHeight,
             breakpoint: breakpoint,
-            breakpoints: widget.config.breakpoints,
+            breakpoints: widget.breakpoints,
             deviceType: breakpoint.deviceType));
   }
 }

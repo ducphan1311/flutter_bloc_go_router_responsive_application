@@ -33,6 +33,7 @@ class ScreenTypeLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, designInfo) {
+      print('designInfo: ${designInfo.toString()}');
       switch (designInfo.deviceType) {
         case DeviceType.mobile:
           return mobile!(context);

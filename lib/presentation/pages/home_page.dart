@@ -5,6 +5,7 @@ import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_
 import 'package:tips_and_tricks_flutter/presentation/blocs/auth_navigation/auth_navigation_state.dart';
 import 'package:tips_and_tricks_flutter/presentation/blocs/home/home_bloc.dart';
 import 'package:tips_and_tricks_flutter/presentation/blocs/home/home_state.dart';
+import 'package:tips_and_tricks_flutter/utils/responsive/screen_type_layout.dart';
 
 class HomePage extends StatefulWidget {
   static const path = 'HomePage';
@@ -60,27 +61,38 @@ class _HomePageState extends State<HomePage> {
                 child: Text('Login'),
               ),
       ),
-      body: SizedBox(
-        width: double.infinity,
-        height: double.infinity,
-        child: BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
-          return state.when(
-            (defaultData) {
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(defaultData),
-                ],
-              );
-            },
-            loading: () => Center(
-              child: CircularProgressIndicator(),
-            ),
-            error: (e) => Center(
-              child: Text(e),
-            ),
-          );
-        }),
+      body: ScreenTypeLayout(
+        mobile: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
+            return state.when(
+              (defaultData) {
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(defaultData),
+                  ],
+                );
+              },
+              loading: () => Center(
+                child: CircularProgressIndicator(),
+              ),
+              error: (e) => Center(
+                child: Text(e),
+              ),
+            );
+          }),
+        ),
+        tablet: Container(
+          child: Center(
+            child: Text('Tablet'),
+          ),
+        ),
+        desktop: Container(
+            child: Center(
+          child: Text('Desktop'),
+        )),
       ),
     );
   }

@@ -55,4 +55,9 @@ class DesignConfig {
           screenWidth == other.screenWidth &&
           screenHeight == other.screenHeight &&
           breakpoint == other.breakpoint;
+
+  @override
+  String toString() {
+    return '{screenWidth: $screenWidth, screenHeight: $screenHeight, breakpoint: ${breakpoint.toString()}, deviceType: $deviceType}' ;
+  }
 }
